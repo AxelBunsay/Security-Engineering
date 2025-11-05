@@ -127,7 +127,7 @@ html{
   }
 
   #xenxide .lists {
-  @apply bg-gray-800 p-4 pt-1 pb-1 rounded-b-lg ml-2 mb-2 mr-2 text-white shadow-lg ;
+  @apply bg-gray-800 p-4 pt-1 pb-1 rounded-b-lg ml-2 mb-2 mr-2 text-white shadow-lg top-2 sticky z-50 bg-gradient-to-r from-white via-gray-900 to-white bg-[length:200%_200%] [animation:gradient_6s_ease_infinite];
 }
 
   #xenxide .headnav {
