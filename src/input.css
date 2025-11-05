@@ -31,7 +31,7 @@ html{
 }
 
 #DAVID .head {
-  @apply bg-gray-900 text-white rounded-lg m-2;
+  @apply bg-gray-900 text-white rounded-t-lg ml-2 mt-2 mr-2;
 }
 
 #DAVID #title {
@@ -48,7 +48,7 @@ html{
 
 
 #DAVID .list {
-  @apply bg-gray-800 p-4 pt-1 pb-1 rounded-b-lg;
+  @apply bg-gray-800 p-4 pt-1 pb-1 rounded-b-lg ml-2 mr-2 sm:block sm:top-2 sm:sticky sm:z-50;
 }
 
 #DAVID .pindot {
@@ -70,7 +70,7 @@ html{
 #DAVID .navigation {
   @apply grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-3
         w-max sm:max-w-sm md:max-w-md lg:max-w-xs 
-        mr-1 sticky top-2 self-start h-max 
+        mr-1 sticky top-11 self-start h-max 
         transition-all duration-300 ease-in-out;
 }
 

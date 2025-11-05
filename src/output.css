@@ -826,8 +826,11 @@ html {
   cursor: url('/Diamond-Sword-16x16.png') 0 0, auto;
 }
 #DAVID .head {
-  margin: calc(var(--spacing) * 2);
-  border-radius: var(--radius-lg);
+  margin-top: calc(var(--spacing) * 2);
+  margin-right: calc(var(--spacing) * 2);
+  margin-left: calc(var(--spacing) * 2);
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
   background-color: var(--color-gray-900);
   color: var(--color-white);
 }
@@ -877,12 +880,26 @@ html {
   }
 }
 #DAVID .list {
+  margin-right: calc(var(--spacing) * 2);
+  margin-left: calc(var(--spacing) * 2);
   border-bottom-right-radius: var(--radius-lg);
   border-bottom-left-radius: var(--radius-lg);
   background-color: var(--color-gray-800);
   padding: calc(var(--spacing) * 4);
   padding-top: calc(var(--spacing) * 1);
   padding-bottom: calc(var(--spacing) * 1);
+  @media (width >= 40rem) {
+    position: sticky;
+  }
+  @media (width >= 40rem) {
+    top: calc(var(--spacing) * 2);
+  }
+  @media (width >= 40rem) {
+    z-index: 50;
+  }
+  @media (width >= 40rem) {
+    display: block;
+  }
 }
 #DAVID .pindot {
   display: grid;
@@ -941,7 +958,7 @@ html {
 }
 #DAVID .navigation {
   position: sticky;
-  top: calc(var(--spacing) * 2);
+  top: calc(var(--spacing) * 11);
   margin-right: calc(var(--spacing) * 1);
   display: grid;
   height: max-content;
